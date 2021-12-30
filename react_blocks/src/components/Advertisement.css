@@ -1,0 +1,6 @@
+.advertisement{
+    background-color: #B4A7D6;
+    height: 100px;
+    grid-column: 1/4;
+    border:3px solid black;
+}
