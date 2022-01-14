@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align    : center;
+    font-size     : 3rem;
+    font-family   : 'Staatliches', cursive;
+    letter-spacing: 1px;
+    color         : rgb(41, 37, 37);
+}
+
+form {
+    width           : 300px;
+    padding         : 16px;
+    border-radius   : 10px;
+    margin          : auto;
+    background-color: rgb(81, 136, 139);
+}
+
+form label {
+    font-family: 'Staatliches', cursive;
+    width      : 72px;
+    font-weight: bold;
+    display    : inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width           : 180px;
+    padding         : 3px 10px;
+    border          : 1px solid #f6f6f6;
+    border-radius   : 3px;
+    background-color: #f6f6f6;
+    margin          : 8px 0;
+    display         : inline-block;
+}
+
+form input[type="submit"] {
+    width           : 100%;
+    padding         : 8px 16px;
+    margin-top      : 32px;
+    border          : 1px solid #000;
+    border-radius   : 5px;
+    display         : block;
+    color           : #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+button {
+    border       : 1px solid rgb(247, 162, 6);
+    background   : rgb(51, 151, 76);
+    font-family  : 'Staatliches', cursive;
+    color        : white;
+    font-size    : 1.2rem;
+    margin       : 1rem 0;
+    width        : 100%;
+    padding      : 1rem;
+    border-radius: 4px;
+    cursor       : pointer;
+}
+
+button:hover {
+    background   : rgb(10, 138, 42);
+    color        : rgb(228, 135, 42);
+    border       : 2px solid rgb(247, 162, 6);
+    border-radius: 4px;
+}
+
+p {
+    color      : rgb(0, 0, 0);
+    font-family: 'Staatliches', cursive;
+    font-size  : 1.2rem;
+    margin     : 1rem 0;
+}
+p span{
+    color: rgb(6, 102, 247);
+}
+.result {
+    width           : 300px;
+    padding         : 16px;
+    border-radius   : 10px;
+    margin          : auto;
+   
+}
