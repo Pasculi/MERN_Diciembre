@@ -1,0 +1,8 @@
+.card-container {
+  background: lightblue;
+  border: 3px solid black;
+  width:20vw;
+  height:50vh;
+  border-radius:15px;
+
+}
