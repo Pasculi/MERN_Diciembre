@@ -78,13 +78,15 @@ p {
     font-size  : 1.2rem;
     margin     : 1rem 0;
 }
-p span{
+
+p span {
     color: rgb(6, 102, 247);
 }
+
 .result {
-    width           : 300px;
-    padding         : 16px;
-    border-radius   : 10px;
-    margin          : auto;
-   
+    width        : 300px;
+    padding      : 16px;
+    border-radius: 10px;
+    margin       : auto;
+
 }
