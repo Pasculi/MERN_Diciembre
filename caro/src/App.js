@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import ComponenteFuncional from './views/ComponenteFuncional';
+
+import Home from './views/Home';
+import Login from './views/Login';
 
 function App() {
+
+  const msg = 'Soy código Javascript desde el Padre App - con destructuración!!';
+  const [age, setAge] = useState(1);
+  const [text, setText] = useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Login />
+      <h1>Hello ninjas!!!</h1>
+      <h1><Home message={text} /></h1><hr />
+      <ComponenteFuncional edad={age} suma={setAge} text={text} setText ={setText} />
+
     </div>
   );
 }
