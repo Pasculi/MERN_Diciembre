@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import { Link, Route, Router } from 'react-router-dom'
 import VistaDos from './VistaDos'
 import VistaUno from './VistaUno'
@@ -21,3 +21,4 @@ const Home = () => {
 }
 
 export default Home
+ */
