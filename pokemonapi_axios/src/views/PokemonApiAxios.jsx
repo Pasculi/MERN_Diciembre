@@ -7,14 +7,19 @@ const PokemonApiAxios = () => {
 
     const getPokemon = () => {
         axios.get('https://pokeapi.co/api/v2/pokemon?limit=807&offset=0')
-            .then((response) => setPokemon(response.data.results))
-            
-            }
+            .then(response => {
+                console.log(response);
+                const data = response.data.results;
+                setPokemon(data);
+            })
+                .catch(error => console.log(error));
+    }
+
 
     return (
         <div>
             <h1>Pokemon Api Axios</h1>
-            <Button  color="success" onClick={getPokemon}>Pekemons con AXIOS</Button>
+            <Button color="success" onClick={getPokemon}>Pekemons con AXIOS</Button>
             <ul>
                 {pokemon.map((item, index) => (
                     <li key={index}>
