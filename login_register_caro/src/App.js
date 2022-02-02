@@ -7,7 +7,7 @@ function App() {
   const [users, setUsers]= useState([])
     return (
     <div className="App">
-      <Registro users={users} setUsars={setUsers}/>
+      <Registro users={users} setUsers={setUsers}/>
       {users.length > 0 && users.map((user, index) =>(
         <div key={index}>
         <h1>{user.userName}</h1>

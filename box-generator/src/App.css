@@ -1,8 +1,9 @@
 form{
+  display: block;
   margin: 30px;
 }
 .box-container{
-  display: flex;
+  display: inline-flex;
   margin: 20px;
 }
 

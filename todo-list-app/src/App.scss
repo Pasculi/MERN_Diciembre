@@ -1,0 +1,24 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding:15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  
+}
+.todoListContainer{
+  display: flex;
+  justify-content: center;
+  .tableContainer{
+    margin: 5%;
+  }
+}
