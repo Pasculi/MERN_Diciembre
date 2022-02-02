@@ -2,22 +2,26 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 
-const PageColor = (props) => {
+const PageColor = () => {
 
-    const [varprops, color1, color2] = useParams();
-    
+    const { palabra, color1, color2 } = useParams();
+
+    console.log("🚀 ~ file: PageColor.jsx ~ line 8 ~ PageColor ~ useParams", useParams)
+
     const showMessage = () => {
-        if (isNaN(varprops)) {
+        if (isNaN(palabra)) {
+            console.log("🚀 ~ file: PageColor.jsx ~ line 13 ~ showMessage ~ palabra", palabra)
             return (
-                <h1>La palabra es: {varprops} </h1>
+                <div>
+                    <h1>La palabra es: {palabra} </h1>
+                </div>
 
             )
         }
         else {
             return (
                 <div>
-                    <h1>El número es: {varprops} </h1>
-                    {console.log(varprops)}
+                    <h1>El número es: {palabra} </h1>
                 </div>
 
             )

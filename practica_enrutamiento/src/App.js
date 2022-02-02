@@ -1,25 +1,29 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './views/Home';
 import Page from './views/Page';
 import PageColor from './views/PageColor';
-import {
-  BrowserRouter,
-  Route,
-  Routes
-} from 'react-router-dom';
+
 
 function App() {
   return (
 
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path='/home' element={<Home />} />
-          <Route path='/:variable' element={<Page />} />
-          <Route path='/:varprops/:color1/:color2' element={<PageColor />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route exact path='/home'>
+            <Home />
+          </Route>
+          <Route exact path='/:palabra' >
+            <Page />
+          </Route>
+          <Route exact path='/:palabra/:color2/:color1' >
+            <PageColor />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
 
   );
 }
